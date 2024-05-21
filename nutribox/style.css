@@ -1,0 +1,297 @@
+/* Estilos do código 1 */
+
+body {
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF9F3;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #41AD36 !important;
+  color: #FFF9F3;
+}
+
+.navbar {
+  padding-left: 24px;
+  padding-top: 24px;
+  padding-right: 24px;
+}
+
+.nav-pills .nav-link:not(.active):hover {
+  color: #41AD36 !important;
+}
+
+.nav-pills .nav-link {
+  width: 160px !important;
+  height: 40px !important;
+  border-radius: 16px !important;
+  margin: 8px;
+  text-align: center;
+  color: #7A4018;
+  font-weight: bold;
+}
+
+.carousel {
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.carousel-control-prev {
+  padding-left: 200px;
+}
+
+.carousel-control-next {
+  padding-right: 200px;
+}
+
+footer {
+  margin-top: 16px;
+  text-align: center;
+  color: #7A4018;
+  font-size: 12px;
+  font-weight: bold;
+  /* position: fixed; */
+}
+
+.custom-dropdown {
+  background-color: #000000;
+  border-style: none;
+}
+
+.custom-dropdown:hover {
+  background-color: #A0E05E;
+}
+
+.container {
+  padding-left: 80px;
+  padding-right: 80px;
+  /* position: fixed; */
+}
+
+.btn {
+  font-weight: bold;
+}
+
+.card {
+  width: 18rem;
+  margin: 16px;
+  background-color: #A0E05E;
+  border-radius: 20px;
+}
+
+.card-title {
+  color: #064300;
+  font-weight: bold;
+}
+
+.card-subtitle {
+  color: #7A4018;
+  font-weight: bold;
+}
+
+.card-body *:not(h5.card-title) {
+  color: #7A4018;
+}
+
+.list-group {
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.btn-list {
+  background-color: #41AD36;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-list img {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.btn-list:hover {
+  background-color: #17810C;
+}
+
+.tarja_verde {
+  background-color: #A0E05E;
+  
+}
+
+.paragrafo_sobre {
+  color: #7A4018;
+  font-size: 20px;
+  margin: 96px; 
+  justify-content: center;
+}
+
+.titulo_sobre {
+  color: #7A4018;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 32px;
+}
+
+.lista_div_verde {
+  color: #7A4018;
+  list-style-type: none;
+  text-align: center;
+  font-size: 18px;
+}
+
+.titulo_div_verde {
+  color: #064300;
+  font-size: 20px;
+  text-align: center;
+}
+
+.imagem_logo img {
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: auto;
+}
+
+.container a:link {
+  color: #7A4018;
+}
+
+.container a:visited {
+  color: #311909;
+}
+
+.container a:hover {
+  color: #7A4018;
+}
+
+.container a:active {
+  color: #064300;
+}
+
+
+/* Estilos do código 2 */
+
+h2 {
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #A0E05E;
+  border-radius: 5px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin: 0 auto;
+  display: block;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+}
+
+
+.btn_aguaa{
+  width: 200px;
+  background-color:#82D8FF;
+  margin-bottom: 10px;
+  color: white;
+  outline: none;
+}
+.btn_refeicao{
+  width: 200px;
+  background-color:#6BC744;
+  color: white;
+  outline: none;
+}
+
+.dropdown{
+  background-color: #17810C;
+}
+.dropdown-down{
+  background-color: #ff0000;
+}
+#dropdownMenuLink{
+  background-color: #17810C;
+}
+.footeer{
+  text-align: center;
+}
+.login_title{
+  text-align: center;
+  margin: 96px;
+  color: #311909;
+}
+.btn_cadastro{
+  background-color:#199278;
+  width: 200px;
+  margin: 10px 20px 10px 20px;
+}
+.btn_login{
+  background-color:#0d3a4e;
+  width: 200px;
+  margin: 10px 20px 10px 20px;
+}
+.div_botoes{
+  width: 100%;
+}
+.form_login{
+  width: 600px;
+  height: 350px;
+}
+.div_botoes a:link{
+  color: white;
+} 
+.div_botoes a:visited {
+  color: white;
+} 
+.div_botoes a:hover{
+  color: white;
+} 
+.div_botoes a:active{
+  color: white;
+}

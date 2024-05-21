@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nutribox</title>
+        <!-- fonte -->
+        <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <!-- css separado -->
+        <link rel="stylesheet" href="style.css">
+        <!-- icon -->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    </head>
+<body>
+
+    <main>
+       <!--NAV-->
+       <nav class="navbar navbar-light">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <a href="index.html">
+                  <img src="assets/logotipo.png"  width="200" alt="" >
+                </a>
+            </div>
+            <div class="d-flex justify-content-end">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Usuário
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="perfil.html">Perfil</a>
+                        <a class="dropdown-item" href="login.html">Sair</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+        <!-- BOTOES -->
+        <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="index.html#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="refeicoes.html" role="tab" aria-controls="pills-profile" aria-selected="false">Refeições</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-contact-tab" data-toggle="pill" href="sobre.html" role="tab" aria-controls="pills-contact" aria-selected="false">Sobre</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"></div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"></div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"></div>
+        </div>
+
+        <h1 class="titulo_sobre">Sobre o projeto</h1>
+        <p class="paragrafo_sobre">
+            Bem-vindo ao nosso projeto dedicado à sua saúde e bem-estar! Nossa plataforma oferece uma abordagem holística para ajudá-lo a atingir seus objetivos de saúde e condicionamento físico. Com recursos intuitivos de rastreamento de alimentos, planejamento de refeições e monitoramento de atividades físicas, estamos aqui para simplificar sua jornada. Além disso, fornecemos recursos educacionais e uma comunidade solidária para inspirar e motivar. Junte-se a nós enquanto trabalhamos juntos para alcançar uma vida mais saudável e equilibrada. Seja bem-vindo ao nosso projeto, onde cada passo conta para um você mais saudável!
+        </p>
+        <!-- <div class="imagem_logo">
+            <img src="assets/logotipo - Copia.png" alt="Logo">
+        </div> -->
+
+        <div class="tarja_verde">
+            <ul class="titulo_div_verde">Alunos
+                <li class="lista_div_verde"> Ana Beatriz Benigno Matos Lima </li>
+                <li class="lista_div_verde">João Mateus Peixoto Matos</li>
+            </ul>
+
+            <ul class="titulo_div_verde"> Orientadores
+                <li class="lista_div_verde">Diógenes Emidio Leodido</li>
+            </ul>
+        </div>
+    </main> <!-- Fechamento da tag main -->
+
+    <footer class="footer fixed-bottom text-center">
+        <div class="container">
+            <p>Copyright © 2024 NutriBox. All rights reserved.<br>
+                <a href="contato.html">Contato</a> | Política de Privacidade</p>
+        </div>
+    </footer>
+
+    <!-- jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

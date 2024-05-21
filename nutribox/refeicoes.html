@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutribox</title>
+    <!--fonte-->
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!--css separado-->
+    <link rel="stylesheet" href="style.css">
+    <!--iconezinho-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+</head>
+<body>
+    <main>
+        <!--NAV-->
+        <nav class="navbar navbar-light">
+         <div class="container-fluid">
+             <div class="navbar-brand">
+                 <a href="index.html">
+                   <img src="assets/logotipo.png"  width="200" alt="" >
+                 </a>
+             </div>
+             <div class="d-flex justify-content-end">
+                 <div class="dropdown">
+                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Usuário
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                         <a class="dropdown-item" href="perfil.html">Perfil</a>
+                         <a class="dropdown-item" href="login.html">Sair</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </nav>
+
+    <!--BOTOES-->
+    <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="index.html#pills-refeicoes" role="tab" aria-controls="pills-home" aria-selected="true">Início</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="refeicoes.html" role="tab" aria-controls="pills-profile" aria-selected="false">Refeições</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="sobre.html" role="tab" aria-controls="pills-contact" aria-selected="false">Sobre</a>
+        </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"></div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"></div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"></div>
+        </div>
+
+        <!--CALORIAS
+        <ul class="nav justify-content-center" style="background-color: #41AD36;">
+            <li class="nav-item mr-auto d-flex align-items-center text-center">
+                <h4 class="nav-title" aria-current="page" style="color: white;"><b>CALORIAS RESTANTES</b></h4>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+                <div class="progress" style="width: 200px; margin: 16px;">
+                    <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </li>
+            <li class="nav-item d-flex align-items-center" style="color: white;">1500</li>
+        </ul>
+    -->
+        
+    <!--CARDS-->
+    <div class="container d-flex justify-content-center">
+        <!--CAFE DA MANHA-->
+        <div class="card">
+            <div class="card-body text-center d-flex flex-column">
+                <h5 class="card-title">Café da Manhã</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">0</h6>
+                <p class="card-text">Você ainda não adicionou uma refeição a esta categoria.<br><b>Não é saudável pular refeições!</b></p>
+                <button type="button" class="btn btn-primary btn-list btn-sm mt-auto" onclick="showAlert()">
+                    <img src="assets/plus-branco.png" width="24" alt="Ícone">
+                    <span style="color: white;">Adicionar Refeição</span>
+                </button>      
+            </div>
+        </div>
+        <!--ALMOCO-->
+        <div class="card">
+            <div class="card-body text-center d-flex flex-column">
+                <h5 class="card-title">Almoço</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">650</h6>
+                <div class="overflow-auto" style="max-height: 140px;">
+                    <ul class="list-group list-group-flush flex-column">
+                        <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                            <span>Arroz com Frango</span>
+                            <span>500</span>
+                        </li>
+                        <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                            <span>Pudim pequeno</span>
+                            <span>150</span>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-primary btn-list btn-sm mt-auto" onclick="showAlert()">
+                    <img src="assets/plus-branco.png" width="24" alt="Ícone">
+                    <span style="color: white;">Adicionar Refeição</span>
+                </button>                 
+            </div>
+        </div>
+        <!--JANTAR-->
+        <div class="card">
+            <div class="card-body text-center d-flex flex-column">
+                <h5 class="card-title">Jantar</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">650</h6>
+                <div class="overflow-auto" style="max-height: 140px;">
+                    <ul class="list-group list-group-flush flex-column">
+                        <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                            <span>Arroz com Frango</span>
+                            <span>500</span>
+                        </li>
+                        <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                            <span>Pudim pequeno</span>
+                            <span>150</span>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-primary btn-list btn-sm mt-auto" onclick="showAlert()">
+                    <img src="assets/plus-branco.png" width="24" alt="Ícone">
+                    <span style="color: white;">Adicionar Refeição</span>
+                </button>                 
+            </div>
+        </div>
+        <!--LANCHES-->
+        <div class="card">
+            <div class="card-body text-center d-flex flex-column">
+                <h5 class="card-title">Lanches</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">650</h6>
+                <div class="overflow-auto" style="max-height: 140px;">
+                    <ul class="list-group list-group-flush flex-column">
+                        <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                            <span>Arroz com Frango</span>
+                            <span>500</span>
+                        </li>
+                        <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                            <span>Pudim pequeno</span>
+                            <span>150</span>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-primary btn-list btn-sm mt-auto" onclick="showAlert()">
+                    <img src="assets/plus-branco.png" width="24" alt="Ícone">
+                    <span style="color: white;">Adicionar Refeição</span>
+                </button>                 
+            </div>
+        </div>
+    </div>
+    <!--água-->
+    <div class="container d-flex justify-content-center">
+        <div class="card" style="background-color: #82D8FF;">
+            <div class="card-body text-center d-flex flex-column">
+                <h5 class="card-title" style="color:#166EBF">Água</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary" style="color:#166EBF">1500ml</h6>
+                <div class="">
+                    <ul class="list-group overflow-auto list-group-flush flex-column" style="max-height: 100px;">
+                        <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                            <span>Copo</span>
+                            <span>200</span>
+                        </li>
+                        <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                            <span>Garrafa</span>
+                            <span>700</span>
+                        </li>
+                        <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                            <span>Copo</span>
+                            <span>200</span>
+                        </li>
+                        <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                            <span>Copo</span>
+                            <span>200</span>
+                        </li>
+                        <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                            <span>Copo</span>
+                            <span>200</span>
+                        </li>
+                        <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                            <span>Copo</span>
+                            <span>200</span>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-primary btn-list btn-sm mt-auto" style="background-color:#166EBF" onclick="showAlert()">
+                    <img src="assets/plus-branco.png" width="24" alt="Ícone">
+                    <span style="color: white;">Adicionar Água</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <footer class="footer fixed-bottom text-center">
+        <div class="container">
+          <p>Copyright © 2024 NutriBox. All rights reserved.<br>
+            <a href="contato.html">Contato</a> | Política de Privacidade</p>
+        </div>
+      </footer>
+       -->
+      
+      <!-- coisa do bootstrap
+      Popper.js -->
+      <!-- <script src="C:\Users\birib\Downloads\bootstrap-5.3.3-dist\js\bootstrap.min.js"></script> -->
+      <!-- bootstrap JavaScript -->
+      <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha384-l7e4peMyc/QCN3MM+JmA1d5XUNOJZZVlXlWCEkei0qc7WKgja2EVPmgnCW8spcCE" crossorigin="anonymous"></script> -->
+      <!-- <script>
+        const dropdownElementList = document.querySelectorAll('.dropdown-toggle');
+        const dropdownList = [...dropdownElementList].map(dropdownToggleEl => new bootstrap.Dropdown(dropdownToggleEl));
+
+      </script> -->
+       <!-- jquery -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+    <!-- popper -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> -->
+    <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+        <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"> -->
+        
+        
+        <script src="script.js"></script>
+
+       <!-- Dropdown user -->
+       <script>
+         function showAlert() {
+            alert(" Adicionado com sucesso !");
+         }
+       </script>
+      </body>
+</html>
